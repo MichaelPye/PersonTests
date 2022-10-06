@@ -3,7 +3,7 @@
     /// <summary>
     /// Represents one person saving their name.
     /// </summary>
-    public class Person
+    public class Person : IResettable
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="Person"/> class.
@@ -27,6 +27,11 @@
         public override string ToString()
         {
             return this.Name;
+        }
+
+        public void Resettable()
+        {
+            this.Name = "";
         }
     }
 }

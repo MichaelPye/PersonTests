@@ -29,20 +29,20 @@ namespace PersonTests
         //    }
         //}
 
-        //private static int TestReset()
-        //{
-        //    Person person = new ("Test");
-        //    person.Reset();
-        //    if (person.Name == string.Empty)
-        //    {
-        //        return 0;
-        //    }
-        //    else
-        //    {
-        //        MessageBox.Show("TestReset failed!");
-        //        return 1;
-        //    }
-        //}
+        private static int TestReset()
+        {
+            Person person = new("Test");
+            person.Resettable();
+            if (person.Name == string.Empty)
+            {
+                return 0;
+            }
+            else
+            {
+                MessageBox.Show("TestReset failed!");
+                return 1;
+            }
+        }
 
         //private static int TestCompare()
         //{
@@ -81,7 +81,7 @@ namespace PersonTests
             // Run feature tests here
             // this.failedTests += TestDisplay();
             // this.failedTests += TestCompare();
-            // this.failedTests += TestReset();
+            this.failedTests += TestReset();
             // this.failedTests += TestSize();
             MessageBox.Show(this.failedTests.ToString() + " of 4 tests failed!");
         }
