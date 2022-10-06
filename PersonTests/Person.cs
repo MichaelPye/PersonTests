@@ -33,5 +33,10 @@
         {
             this.Name = "";
         }
+
+        public void Displayable()
+        {
+            MessageBox.Show(Name);
+        }
     }
 }
