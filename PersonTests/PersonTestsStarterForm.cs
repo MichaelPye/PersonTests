@@ -29,6 +29,10 @@ namespace PersonTests
         //    }
         //}
 
+        /// <summary>
+        ///  verifies presence of IResettable interface.
+        /// </summary>
+        /// <returns> Method returns empty string </returns>
         private static int TestReset()
         {
             Person person = new("Test");
@@ -59,6 +63,10 @@ namespace PersonTests
         //    }
         //}
 
+        /// <summary>
+        /// verifies presence of IDisplayable interface.
+        /// </summary>
+        /// <returns> Method returns string Bob on correct implimentation. </returns>
         private static int TestDisplay()
         {
             try

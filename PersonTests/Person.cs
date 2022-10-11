@@ -29,11 +29,17 @@
             return this.Name;
         }
 
+        /// <summary>
+        /// Method Resettable returns empty string.
+        /// </summary>
         public void Resettable()
         {
             this.Name = "";
         }
 
+        /// <summary>
+        /// Method Displayable generates message box that shows name.
+        /// </summary>
         public void Displayable()
         {
             MessageBox.Show(Name);
