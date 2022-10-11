@@ -59,5 +59,17 @@
         {
             MessageBox.Show(Name);
         }
+
+        public int CompareTo(Person person)
+        {
+            if (this.Name == person.Name)
+            {
+                return 1;
+            }
+            else
+            {
+                return -1;
+            }
+        }
     }
 }
