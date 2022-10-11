@@ -3,7 +3,7 @@
     /// <summary>
     /// Represents one person saving their name.
     /// </summary>
-    public class Person : IResettable
+    public class Person : IResettable, IMeasurable
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="Person"/> class.
@@ -14,6 +14,21 @@
         {
             this.Name = name.Trim();
         }
+
+        public void Count()
+        {
+            string[] count = Name.Split("");
+
+            foreach (char c in Name)
+            {
+                if (char.IsLetter(c))
+                {
+                    Size++;
+                }
+            }
+        }
+
+        public int Size { get; set; }
 
         /// <summary>
         /// Gets or sets the name of the person.
